@@ -1,0 +1,28 @@
+import React from 'react';
+import './Product.css';
+import StarIcon from '@material-ui/icons/Star';
+
+function Product({ id, name, brand, price, image, rating }) {
+    return (
+        <div className="product">
+            <div className="product__image__container">
+                <img className="product__image" src={image} />
+            </div>
+            <div className="product__details">
+                <p className="product__name">{name}</p>
+                <span className="product__brand__name">by {brand}</span>
+                <p className="product__price">$ {price}</p>
+                <div className="product__rating">
+                    {Array(rating).fill(0).map(r => (
+                        <StarIcon className="product__rating__star" />
+                    ))}
+                </div>
+            </div>
+            <div className="product__button__wrapper">
+                <button className="product__button">Add Item</button>
+            </div>
+        </div>
+    )
+}
+
+export default Product;
