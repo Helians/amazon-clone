@@ -64,15 +64,23 @@
     flex-direction: column;
     margin-left: 1em;
     justify-content: center;
+    text-decoration: none;
+}
+
+.header__option__link {
+    text-decoration: none;
+    color: #fff;
 }
 
 .header__option-first {
     font-size: 12px;
+    text-decoration: none;
 }
 
 .header__option-second {
     font-size: 14px;
     font-weight: 800;
+    text-decoration: none;
 }
 
 .header__option__cart {
